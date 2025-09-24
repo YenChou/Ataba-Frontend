@@ -6,9 +6,9 @@
 - [x] 分析參考網站 https://bestloffice.com/ 的設計和架構
 - [x] 分析現有網站備份檔案結構和內容
 - [x] 設計新網站整體架構和路由結構 (按照指定頁面)
+- [x] 建立共用組件 (Header, Footer, Navigation)
 
 ### 🔄 進行中
-- [ ] 建立共用組件 (Header, Footer, Navigation)
 
 ### 📝 待辦事項
 - [ ] 實作 Home 首頁

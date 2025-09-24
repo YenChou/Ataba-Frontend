@@ -4,17 +4,56 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-          Welcome to <span className="text-blue-600">ATABA</span>
+      <div className="text-center mb-16">
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          Professional Calculator Solutions by <span className="text-blue-600">ATABA</span>
         </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Professional calculator manufacturer specializing in innovative computing solutions for business and education.
+        <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+          Leading manufacturer of high-quality calculators for business, education, and professional use.
+          Over 30 years of innovation in computing technology with comprehensive OEM/ODM services.
         </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/products"
+            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-md hover:bg-blue-700 transition-colors font-medium text-lg"
+          >
+            View Our Products
+          </Link>
+          <Link
+            href="/about"
+            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-md border-2 border-blue-600 hover:bg-blue-50 transition-colors font-medium text-lg"
+          >
+            About ATABA
+          </Link>
+        </div>
       </div>
 
-      {/* Products Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      {/* Company Stats */}
+      <div className="bg-gray-50 rounded-lg p-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
+            <div className="text-gray-600">Years Experience</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
+            <div className="text-gray-600">Product Models</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+            <div className="text-gray-600">Countries Served</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">ISO</div>
+            <div className="text-gray-600">Certified Quality</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Product Categories */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Product Range</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Handy Calculators */}
         <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
           <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -62,10 +101,46 @@ export default function Home() {
             Learn More →
           </Link>
         </div>
+        </div>
+      </div>
+
+      {/* Why Choose ATABA */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why Choose ATABA</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="text-center p-6">
+            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span className="text-blue-600 text-2xl">🏭</span>
+            </div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Advanced Manufacturing</h3>
+            <p className="text-gray-600 text-sm">State-of-the-art production facilities with strict quality control</p>
+          </div>
+          <div className="text-center p-6">
+            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span className="text-blue-600 text-2xl">🔬</span>
+            </div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">R&D Innovation</h3>
+            <p className="text-gray-600 text-sm">Continuous research and development for cutting-edge technology</p>
+          </div>
+          <div className="text-center p-6">
+            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span className="text-blue-600 text-2xl">🌍</span>
+            </div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Global Reach</h3>
+            <p className="text-gray-600 text-sm">Worldwide distribution and trusted by customers globally</p>
+          </div>
+          <div className="text-center p-6">
+            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span className="text-blue-600 text-2xl">🤝</span>
+            </div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Custom Solutions</h3>
+            <p className="text-gray-600 text-sm">Comprehensive OEM/ODM services for customized products</p>
+          </div>
+        </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-blue-50 rounded-lg p-8 text-center">
+      <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Custom Solutions Available
         </h2>
@@ -81,7 +156,7 @@ export default function Home() {
           </Link>
           <Link
             href="/contact"
-            className="inline-block bg-white text-blue-600 px-6 py-3 rounded-md border border-blue-600 hover:bg-blue-50 transition-colors font-medium"
+            className="inline-block bg-white text-blue-600 px-6 py-3 rounded-md border border-blue-600 hover:bg-gray-50 transition-colors font-medium"
           >
             Contact Us
           </Link>
