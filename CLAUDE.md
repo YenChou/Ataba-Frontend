@@ -44,9 +44,11 @@ This is a Next.js 15.5.3 frontend application called "ataba-frontend" using Reac
 
 ### Development Workflow
 1. **Always check TODO.md first** before starting any development work
-2. **Follow the exact page structure** defined in TODO.md - do not deviate from specified pages and routes
-3. **Reference design guidelines** from https://bestloffice.com/ for professional enterprise styling
-4. **Update TODO.md** when completing tasks or discovering new requirements
+2. **Create a new git branch** when starting a new feature
+3. **Follow the exact page structure** defined in TODO.md - do not deviate from specified pages and routes
+4. **Reference design guidelines** from https://bestloffice.com/ for professional enterprise styling
+5. **Update TODO.md** when completing tasks or discovering new requirements
+6. **All reference documents** must be placed in the `docs/` directory
 
 ### Page Structure (Strictly Defined)
 ```
@@ -75,3 +77,10 @@ This is a Next.js 15.5.3 frontend application called "ataba-frontend" using Reac
 3. RWD implementation
 4. SEO optimization
 5. Testing and validation
+
+## 📸 Image Resources
+
+### Free Stock Photo Websites
+- **Unsplash**: https://unsplash.com - High-quality free images
+- **Pexels**: https://www.pexels.com - Free stock photos and videos
+- **Pixabay**: https://pixabay.com - Free images and royalty-free stock
