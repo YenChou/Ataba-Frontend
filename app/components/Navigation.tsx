@@ -101,7 +101,8 @@ export default function Navigation({ mobile = false }: NavigationProps) {
               onMouseEnter={() => setOpenDropdown(item.name)}
               onMouseLeave={() => setOpenDropdown(null)}
             >
-              <button
+              <Link
+                href={item.href}
                 className={`flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   isActive(item.href)
                     ? 'text-blue-600'
@@ -123,7 +124,7 @@ export default function Navigation({ mobile = false }: NavigationProps) {
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </button>
+              </Link>
 
               {/* Dropdown Menu */}
               <div
