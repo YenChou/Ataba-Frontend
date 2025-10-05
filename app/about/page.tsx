@@ -1,127 +1,124 @@
-import Link from 'next/link'
+'use client'
+
+import Image from 'next/image'
+import CTASection from '@/components/CTASection'
 
 export default function AboutAtaba() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* Page Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          About <span className="text-blue-600">ATABA</span>
-        </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Leading calculator manufacturer with decades of experience in innovative computing solutions
-        </p>
-      </div>
+    <div>
+      {/* Banner Part */}
+      <section className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+          alt="About Ataba"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
 
-      {/* Company Overview */}
-      <div className="bg-white rounded-lg border border-gray-200 p-8 mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Company</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Content */}
+        <div className="relative h-full container mx-auto px-4 flex items-center justify-center">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              About Ataba
+            </h1>
+            <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
+              Leading Calculator Manufacturer Since 1990
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Part */}
+      <section className="container mx-auto px-4 py-16 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Image */}
+          <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+              alt="Ataba Company"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* Content */}
           <div>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              ATABA has been at the forefront of calculator manufacturing for over three decades,
-              consistently delivering high-quality computing solutions that meet the evolving needs
-              of businesses, educational institutions, and individual users worldwide.
-            </p>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Our commitment to innovation, quality, and customer satisfaction has established us
-              as a trusted partner in the global calculator industry.
-            </p>
-          </div>
-          <div className="bg-gray-50 rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Company Highlights</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span className="text-gray-600">30+ years of manufacturing experience</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span className="text-gray-600">Global distribution network</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span className="text-gray-600">ISO certified manufacturing processes</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                <span className="text-gray-600">Comprehensive OEM/ODM services</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Navigation Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Ataba Factory */}
-        <div className="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-lg transition-shadow">
-          <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Ataba Factory</h3>
-            <p className="text-gray-600 leading-relaxed">
-              Discover our state-of-the-art manufacturing facilities, advanced production processes,
-              and quality control systems that ensure every calculator meets our high standards.
-            </p>
-          </div>
-          <Link
-            href="/about/factory"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
-          >
-            Learn About Our Factory →
-          </Link>
-        </div>
-
-        {/* OEM/ODM Service */}
-        <div className="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-lg transition-shadow">
-          <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">OEM/ODM Service</h3>
-            <p className="text-gray-600 leading-relaxed">
-              Partner with us for custom calculator solutions. Our comprehensive OEM/ODM services
-              help bring your unique product vision to life with our expertise and manufacturing capabilities.
-            </p>
-          </div>
-          <Link
-            href="/about/oem-odm"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
-          >
-            Explore OEM/ODM Services →
-          </Link>
-        </div>
-      </div>
-
-      {/* Values Section */}
-      <div className="mt-16">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Values</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="text-blue-600 text-2xl font-bold">Q</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Our Story
+            </h2>
+            <div className="space-y-4 text-gray-600 leading-relaxed">
+              <p>
+                ATABA has been at the forefront of calculator manufacturing for over three decades,
+                consistently delivering high-quality computing solutions that meet the evolving needs
+                of businesses, educational institutions, and individual users worldwide.
+              </p>
+              <p>
+                Our commitment to innovation, quality, and customer satisfaction has established us
+                as a trusted partner in the global calculator industry. With state-of-the-art manufacturing
+                facilities and a dedicated team of professionals, we continue to push the boundaries of
+                what&#39;s possible in calculator technology.
+              </p>
+              <p>
+                From desktop calculators to advanced scientific models, every product bearing the ATABA
+                name represents our dedication to precision, reliability, and excellence.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Quality</h3>
-            <p className="text-gray-600">
-              Uncompromising commitment to delivering products that exceed industry standards
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="text-blue-600 text-2xl font-bold">I</span>
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 gap-6 mt-8">
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">30+</div>
+                <div className="text-gray-600">Years Experience</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
+                <div className="text-gray-600">Product Models</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                <div className="text-gray-600">Countries Served</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">ISO</div>
+                <div className="text-gray-600">Certified Quality</div>
+              </div>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Innovation</h3>
-            <p className="text-gray-600">
-              Continuous research and development to create cutting-edge calculator technology
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="text-blue-600 text-2xl font-bold">S</span>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Service</h3>
-            <p className="text-gray-600">
-              Dedicated customer support and partnership throughout the entire product lifecycle
-            </p>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Company Video Section */}
+      <section className="bg-gray-50 py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Discover Our Manufacturing Excellence
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Take a virtual tour of our facilities and see how we create quality calculators
+            </p>
+          </div>
+
+          {/* YouTube Video Embed */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/b_ezMoE5h4w"
+                title="Ataba Company Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <CTASection />
     </div>
   )
 }
