@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import bannerSlidesData from '@/mockdata/bannerSlides.json'
 import featuredProductsData from '@/mockdata/featuredProducts.json'
+import type { Product } from '@/types/product'
 
 // Import mock data
 const bannerSlides = bannerSlidesData
@@ -338,7 +339,7 @@ function FeaturedProducts() {
 }
 
 // Product Card Component
-function ProductCard({ product }: { product: any }) {
+function ProductCard({ product }: { product: Product }) {
   return (
     <div className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
       {/* Product Image */}
