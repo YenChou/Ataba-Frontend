@@ -1,35 +1,18 @@
 'use client'
 
 import Image from 'next/image'
+import PageBanner from '@/components/PageBanner'
 import CTASection from '@/components/CTASection'
 
 export default function AboutAtaba() {
   return (
     <div>
       {/* Banner Part */}
-      <section className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
-          alt="About Ataba"
-          fill
-          className="object-cover"
-          priority
-        />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/50" />
-
-        {/* Content */}
-        <div className="relative h-full container mx-auto px-4 flex items-center justify-center">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              About Ataba
-            </h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-              Leading Calculator Manufacturer Since 1990
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner
+        title="About Ataba"
+        subtitle="Over 30 years of global experience in calculator manufacturing and OEM/ODM services."
+        image="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+      />
 
       {/* About Us Part */}
       <section className="container mx-auto px-4 py-16 md:py-20">
@@ -47,44 +30,21 @@ export default function AboutAtaba() {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Our Story
+              ATABA
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                ATABA has been at the forefront of calculator manufacturing for over three decades,
-                consistently delivering high-quality computing solutions that meet the evolving needs
-                of businesses, educational institutions, and individual users worldwide.
+                <b>ATABA is a trusted calculator manufacturer with over 30 years of experience, serving OEM/ODM clients in more than 50 countries.</b>
               </p>
               <p>
-                Our commitment to innovation, quality, and customer satisfaction has established us
-                as a trusted partner in the global calculator industry. With state-of-the-art manufacturing
-                facilities and a dedicated team of professionals, we continue to push the boundaries of
-                what&#39;s possible in calculator technology.
+                We’ve built long-term partnerships with a number of global brands for over a decade, driven by our consistent quality and dependable service.
               </p>
               <p>
-                From desktop calculators to advanced scientific models, every product bearing the ATABA
-                name represents our dedication to precision, reliability, and excellence.
+                With headquarters in Taiwan and Hong Kong, and our own factory in Dongguan, China, we manage the entire production process in-house — from tooling and injection to SMT, assembly, and packaging — ensuring full control over quality, cost, and lead time.
               </p>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 mt-8">
-              <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">30+</div>
-                <div className="text-gray-600">Years Experience</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-                <div className="text-gray-600">Product Models</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
-                <div className="text-gray-600">Countries Served</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">ISO</div>
-                <div className="text-gray-600">Certified Quality</div>
-              </div>
+              <p>
+                From office and school use to retail and promotional models, we offer flexible support for both high-volume orders and low-MOQ custom projects.
+              </p>
             </div>
           </div>
         </div>
@@ -93,21 +53,21 @@ export default function AboutAtaba() {
       {/* Company Video Section */}
       <section className="bg-gray-50 py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Discover Our Manufacturing Excellence
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Take a virtual tour of our facilities and see how we create quality calculators
-            </p>
-          </div>
+          {/*<div className="text-center mb-12">*/}
+          {/*  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">*/}
+          {/*    Discover Our Manufacturing Excellence*/}
+          {/*  </h2>*/}
+          {/*  <p className="text-lg text-gray-600 max-w-2xl mx-auto">*/}
+          {/*    Take a virtual tour of our facilities and see how we create quality calculators*/}
+          {/*  </p>*/}
+          {/*</div>*/}
 
           {/* YouTube Video Embed */}
           <div className="max-w-4xl mx-auto">
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/b_ezMoE5h4w"
+                src="https://www.youtube.com/embed/jqZwJeJ7slA"
                 title="Ataba Company Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

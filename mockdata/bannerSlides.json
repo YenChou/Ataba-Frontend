@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "title": "專業計算機解決方案",
-    "subtitle": "Professional Calculator Solutions",
-    "description": "30年以上專業製造經驗，提供高品質計算機產品與完整的 OEM/ODM 客製化服務",
+    "title": "30+ Years of Expertise",
+    "subtitle": "",
+    "description": "Trusted by global brands for consistent quality and reliable delivery.\n",
     "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80",
     "bgPosition": "center"
   },
   {
     "id": 2,
-    "title": "精準品質 值得信賴",
-    "subtitle": "Precision Quality You Can Trust",
-    "description": "採用先進技術與嚴格品質控管，為您提供最可靠的計算解決方案",
+    "title": "Quality You Can Count On",
+    "subtitle": "",
+    "description": "Precision-built with full in-house production for unmatched consistency.\n",
     "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80",
     "bgPosition": "center"
   },
   {
     "id": 3,
-    "title": "客製化 OEM/ODM 服務",
-    "subtitle": "Customized OEM/ODM Services",
-    "description": "根據您的需求量身打造專屬計算機產品，從設計到生產全程支援",
+    "title": "Flexible OEM/ODM Services",
+    "subtitle": "",
+    "description": "Accepting low MOQ and custom designs — fast, tailored solutions to match your market.\n",
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
     "bgPosition": "center"
   }

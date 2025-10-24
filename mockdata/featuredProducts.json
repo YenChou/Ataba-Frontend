@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "12 Digit Desktop Calculator",
+    "name": "Handy Calculator",
     "nameCn": "12位桌上型計算機",
-    "description": "大型桌上型計算機，12位數顯示，適合辦公室和商業環境使用",
+    "description": "A full range of designs — from gift-style models to professional functions.Colorful and compact, easy to integrate into your product line.",
     "icon": "🖩",
     "image": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=800&q=80",
     "gradient": "from-gray-100 to-gray-200",
@@ -11,9 +11,9 @@
   },
   {
     "id": 2,
-    "name": "Handy Pocket Calculator",
+    "name": "Desktop Calculator",
     "nameCn": "便攜式口袋計算機",
-    "description": "輕巧便攜式計算機，適合隨身攜帶，提供基本運算功能",
+    "description": "Large displays and practical layouts — ideal for office, retail, and accounting use.Available in a wide range of sizes and functions.",
     "icon": "📱",
     "image": "https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?w=800&q=80",
     "gradient": "from-blue-50 to-blue-100",
@@ -23,30 +23,10 @@
     "id": 3,
     "name": "Scientific Calculator",
     "nameCn": "科學計算機",
-    "description": "專業科學計算機，提供進階數學和科學運算功能",
+    "description": "From basic to advanced functions for education, engineering, and technical fields — with up to 552 operations.Unique models designed to help your brand stand out in the market.",
     "icon": "🔬",
     "image": "https://images.unsplash.com/photo-1611078489935-0cb964de46d6?w=800&q=80",
     "gradient": "from-purple-50 to-purple-100",
     "link": "/products/scientific-calculator"
-  },
-  {
-    "id": 4,
-    "name": "Financial Calculator",
-    "nameCn": "金融計算機",
-    "description": "專業金融計算機，提供財務分析和投資計算功能",
-    "icon": "💰",
-    "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80",
-    "gradient": "from-green-50 to-green-100",
-    "link": "/products/financial-calculator"
-  },
-  {
-    "id": 5,
-    "name": "Printing Calculator",
-    "nameCn": "列印型計算機",
-    "description": "帶列印功能的計算機，適合會計和財務工作使用",
-    "icon": "🖨️",
-    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
-    "gradient": "from-orange-50 to-orange-100",
-    "link": "/products/printing-calculator"
   }
 ]

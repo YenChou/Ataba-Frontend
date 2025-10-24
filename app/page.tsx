@@ -63,9 +63,6 @@ export default function Home() {
                     : 'opacity-0 translate-x-10 absolute'
                 }`}
               >
-                <p className="text-sm md:text-base font-medium tracking-wider uppercase opacity-90 mb-4">
-                  CALCULATED QUALITY
-                </p>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4">
                   {slide.title}
                 </h1>
@@ -102,25 +99,26 @@ export default function Home() {
         {/* Hero Content */}
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Professional Calculator Solutions by{' '}
-            <span className="text-blue-600">ATABA</span>
+            Trusted Calculator Manufacturing Partner
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">
-            Leading manufacturer of high-quality calculators for business, education, and professional use.
-            Over 30 years of innovation in computing technology with comprehensive OEM/ODM services.
+          </p>
+          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">
+            <b>ATABA is a professional calculator manufacturer with over 30 years of experience, serving business, education, and OEM/ODM clients across more than 50 countries.</b><br />
+            With fully in-house production — including tooling, injection molding, SMT, PCBA assembly, and packaging — we ensure consistent quality, short lead times, and flexible customization for every customer.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/products"
               className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 font-semibold text-lg shadow-md hover:shadow-lg w-full sm:w-auto text-center"
             >
-              View Our Products
+              Explore our products
             </Link>
             <Link
               href="/about"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300 font-semibold text-lg shadow-sm hover:shadow-md w-full sm:w-auto text-center"
             >
-              About ATABA
+              Learn more About Ataba
             </Link>
           </div>
         </div>
@@ -138,10 +136,10 @@ export default function Home() {
             </div>
             <div className="text-center group">
               <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-110 transition-transform duration-300">
-                500+
+                100+
               </div>
               <div className="text-sm md:text-base text-gray-600 font-medium">
-                Product Models
+                Calculator models
               </div>
             </div>
             <div className="text-center group">
@@ -184,9 +182,10 @@ function FeaturedProducts() {
   // Use products from imported JSON
   const products = featuredProducts;
 
-  // Auto-rotate carousel every 5 seconds
+  // Auto-rotate carousel every 5 seconds (only if more than 3 products)
   useEffect(() => {
     if (isDragging) return; // Don't auto-rotate while dragging
+    if (products.length <= 3) return; // Don't auto-rotate if 3 or fewer products
 
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % products.length);
@@ -343,7 +342,7 @@ function ProductCard({ product }: { product: Product }) {
           href={product.link}
           className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm"
         >
-          了解更多
+          Learn More
           <span className="ml-1">→</span>
         </Link>
       </div>

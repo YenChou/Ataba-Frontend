@@ -8,14 +8,14 @@ export default function CTASection() {
           Custom Solutions Available
         </h2>
         <p className="text-lg text-gray-600 mb-6">
-          We offer OEM/ODM services to create customized calculator solutions for your specific needs.
+          Looking for something tailored?<br/> We provide OEM/ODM services to develop customized calculator solutions that meet your specific needs.
         </p>
         <div className="space-x-4">
           <Link
-            href="/about/oem-odm"
+            href="/about"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
           >
-            Learn About OEM/ODM
+            ATABA capacity
           </Link>
           <Link
             href="/contact"
