@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import PageBanner from '@/components/PageBanner'
 import CTASection from '@/components/CTASection'
+import StrengthSection from '@/components/StrengthSection'
 
 export default function AboutAtaba() {
   return (
@@ -76,6 +77,9 @@ export default function AboutAtaba() {
           </div>
         </div>
       </section>
+
+      {/* Our Strength Section */}
+      <StrengthSection />
 
       {/* CTA Section */}
       <CTASection />
