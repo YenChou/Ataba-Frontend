@@ -14,7 +14,7 @@ export default function Footer() {
     {
       title: 'Products',
       links: [
-        { name: 'New Products', href: '/products/new' },
+        { name: 'All Products', href: '/products/new' },
         { name: 'Handy Calculator', href: '/products/handy-calculator' },
         { name: 'Desktop Calculator', href: '/products/desktop-calculator' },
         { name: 'Scientific Calculator', href: '/products/scientific-calculator' },
@@ -39,11 +39,8 @@ export default function Footer() {
               <span className="text-2xl font-bold text-blue-400">ATABA</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              Professional calculator manufacturer specializing in innovative computing solutions for business and education.
+              ATABA is a professional calculator manufacturer with over 30 years of experience, providing OEM/ODM solutions to clients in 50+ countries.
             </p>
-            <div className="text-gray-400 text-sm">
-              <p>Leading the future of calculation technology</p>
-            </div>
           </div>
 
           {/* Footer Links */}
