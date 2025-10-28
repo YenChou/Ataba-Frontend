@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "type_name": "company_news",
+    "description": "Company News",
+    "is_active": true,
+    "sort_order": 1,
+    "created_at": "2025-10-27T15:40:00.261676Z"
+  },
+  {
+    "id": 2,
+    "type_name": "event_info",
+    "description": "Event Information",
+    "is_active": true,
+    "sort_order": 2,
+    "created_at": "2025-10-27T15:40:00.261676Z"
+  }
+]

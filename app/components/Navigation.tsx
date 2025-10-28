@@ -16,10 +16,6 @@ const navigationItems = [
   {
     name: 'About Ataba',
     href: '/about',
-    submenu: [
-      { name: 'Ataba Factory', href: '/about/factory' },
-      { name: 'OEM/ODM Service', href: '/about/oem-odm' },
-    ],
   },
   {
     name: 'Products',
