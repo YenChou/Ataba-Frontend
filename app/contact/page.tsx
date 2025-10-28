@@ -53,7 +53,7 @@ export default function ContactUs() {
       {/* Banner Part */}
       <PageBanner
         title="Contact Us"
-        subtitle="Get in touch with us"
+        subtitle="We’re here to support your OEM/ODM calculator needs — feel free to reach out."
         image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80"
       />
 

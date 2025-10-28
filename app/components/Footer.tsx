@@ -7,8 +7,7 @@ export default function Footer() {
     {
       title: 'About Ataba',
       links: [
-        { name: 'Ataba Factory', href: '/about/factory' },
-        { name: 'OEM/ODM Service', href: '/about/oem-odm' },
+        { name: 'About Ataba', href: '/about' }
       ],
     },
     {
@@ -72,14 +71,15 @@ export default function Footer() {
               © {currentYear} Ataba Company. All rights reserved.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
-                href="/contact"
-                className="text-gray-400 hover:text-white transition-colors text-sm"
-              >
-                Contact
-              </Link>
-              <span className="text-gray-400 text-sm">Privacy Policy</span>
-              <span className="text-gray-400 text-sm">Terms of Service</span>
+              {/*<Link*/}
+              {/*  href="/contact"*/}
+              {/*  className="text-gray-400 hover:text-white transition-colors text-sm"*/}
+              {/*>*/}
+              {/*  Contact*/}
+              {/*</Link>*/}
+              {/*<span className="text-gray-400 text-sm">Privacy Policy</span>*/}
+              {/*<span className="text-gray-400 text-sm">Terms of Service</span>*/}
+
             </div>
           </div>
         </div>
