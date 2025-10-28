@@ -7,7 +7,7 @@ export default function Footer() {
     {
       title: 'About Ataba',
       links: [
-        { name: 'About Ataba', href: '/about' }
+        { name: 'ATABA capacity', href: '/about' }
       ],
     },
     {
