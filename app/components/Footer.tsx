@@ -13,10 +13,10 @@ export default function Footer() {
     {
       title: 'Products',
       links: [
-        { name: 'All Products', href: '/products/new' },
-        { name: 'Handy Calculator', href: '/products/handy-calculator' },
-        { name: 'Desktop Calculator', href: '/products/desktop-calculator' },
-        { name: 'Scientific Calculator', href: '/products/scientific-calculator' },
+        { name: 'All Products', href: '/products' },
+        { name: 'Handy Calculator', href: '/products?type=1' },
+        { name: 'Desktop Calculator', href: '/products?type=2' },
+        { name: 'Scientific Calculator', href: '/products?type=3' },
       ],
     },
     {
@@ -35,7 +35,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-1">
             <div className="mb-4">
-              <span className="text-2xl font-bold text-blue-400">ATABA</span>
+              <img
+                src="/ATABA LOGO White.png"
+                alt="ATABA"
+                className="h-8"
+              />
             </div>
             <p className="text-gray-400 text-sm mb-4">
               ATABA is a professional calculator manufacturer with over 30 years of experience, providing OEM/ODM solutions to clients in 50+ countries.

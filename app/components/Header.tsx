@@ -15,7 +15,11 @@ export default function Header() {
           {/* Logo - Left */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">ATABA</span>
+              <img
+                src="/ATABA LOGO RED.png"
+                alt="ATABA"
+                className="h-8"
+              />
             </Link>
           </div>
 
@@ -30,7 +34,11 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">ATABA</span>
+              <img
+                src="/ATABA LOGO RED.png"
+                alt="ATABA"
+                className="h-8"
+              />
             </Link>
           </div>
 
