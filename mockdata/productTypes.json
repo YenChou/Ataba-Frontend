@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Handy Calculator",
+    "description": "Compact and portable calculators for everyday use",
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Desktop Calculator",
+    "description": "Full-sized calculators for office and professional use",
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Scientific Calculator",
+    "description": "Advanced calculators for students and scientific applications",
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": "2025-01-01T00:00:00Z"
+  }
+]

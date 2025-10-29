@@ -5,12 +5,23 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import bannerSlidesData from '@/mockdata/bannerSlides.json'
 import featuredProductsData from '@/mockdata/featuredProducts.json'
-import type { Product } from '@/types/product'
 import CTASection from '@/components/CTASection'
+
+// Define FeaturedProduct type
+interface FeaturedProduct {
+  id: number
+  name: string
+  nameCn: string
+  description: string
+  icon: string
+  image: string
+  gradient: string
+  link: string
+}
 
 // Import mock data
 const bannerSlides = bannerSlidesData
-const featuredProducts = featuredProductsData
+const featuredProducts = featuredProductsData as FeaturedProduct[]
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -315,8 +326,8 @@ function FeaturedProducts() {
   );
 }
 
-// Product Card Component
-function ProductCard({ product }: { product: Product }) {
+// Product Card Component for Featured Products
+function ProductCard({ product }: { product: FeaturedProduct }) {
   return (
     <div className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
       {/* Product Image */}

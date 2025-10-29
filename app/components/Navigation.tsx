@@ -21,10 +21,9 @@ const navigationItems = [
     name: 'Products',
     href: '/products',
     submenu: [
-      { name: 'New Products', href: '/products/new' },
-      { name: 'Handy Calculator', href: '/products/handy-calculator' },
-      { name: 'Desktop Calculator', href: '/products/desktop-calculator' },
-      { name: 'Scientific Calculator', href: '/products/scientific-calculator' },
+      { name: 'Handy Calculator', href: '/products?type=1' },
+      { name: 'Desktop Calculator', href: '/products?type=2' },
+      { name: 'Scientific Calculator', href: '/products?type=3' },
     ],
   },
   {
